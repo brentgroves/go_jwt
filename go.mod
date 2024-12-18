@@ -2,10 +2,13 @@ module github.com/brentgroves/go_jwt
 
 go 1.22.0
 
-require github.com/MicahParks/compatibility-keyfunc v0.14.0
+require (
+	github.com/MicahParks/jwkset v0.5.19 // indirect
+	github.com/golang-jwt/jwt/v5 v5.2.0 // indirect
+	golang.org/x/time v0.5.0 // indirect
+)
 
 require (
+	github.com/MicahParks/keyfunc/v3 v3.3.5
 	github.com/auth0/go-jwt-middleware v1.0.1
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
-	github.com/form3tech-oss/jwt-go v3.2.5+incompatible // indirect
 )
